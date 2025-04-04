@@ -1,3 +1,4 @@
+//Chủ yếu là làm chức năng thôi, đừng hỏi hiện thị nhé :>
 let students = []
 
 function getStudent() {
@@ -58,6 +59,22 @@ function avgScore() {
     console.log(`Điểm TB: ${total/(students.length)}`)
 }
 
+function deleteStudent() {
+    const students = getStudent()
+
+    var studentIndex = parseInt(prompt("Nhập số thứ tự: "))
+    showStudent()
+
+    if (studentIndex + 1 > students.length) {
+        alert("Số thứ tự lớn hơn số lượng sinh viên")
+        return;
+    }
+
+    students.splice(studentIndex + 1, 1);
+    localStorage.setItem('students', JSON.stringify(students))
+    console.log(`Đã xóa sinh viên ${students[studentIndex].name}`)
+}
+
 function runProgram() {
     do {
         var choice = (prompt(`
@@ -66,7 +83,8 @@ function runProgram() {
             2. Hiển thị danh sách
             3. Tìm kiếm sinh viên
             4. Tính toán điểm trung bình
-            5. Thoát
+            5. Xóa sinh viên
+            6. Thoát
             `));
 
         switch (choice) {
@@ -82,9 +100,11 @@ function runProgram() {
             case '4':
                 avgScore();
                 break;
-            case '5':
+            case '5': 
+                deleteStudent();
+            case '6':
                 console.log('Đã thoát!')
                 break;
         }
-    } while (choice !== '5')
-}
+    } while (choice !== '6')
+} 
