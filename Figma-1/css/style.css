@@ -1,0 +1,244 @@
+body {
+    font-family: "Inter", sans-serif;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.heading {
+    position: fixed;
+    width: 1920px;
+    height: 92px;
+    background: #043873;
+    padding: 16px 220px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+.heading .logo {
+    display: flex;
+    align-items: center;
+}
+.heading .logo img {
+    width: 191px;
+    height: 34px;
+}
+.frame-375 {
+    width: 988.5px;
+    height: 60px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.frame-375 .nav-menu {
+    width: 551.5px;
+    height: 24px;
+    display: flex;
+    gap: 32px;
+}
+.frame-375 .nav-menu .option {
+    width: 116px;
+    height: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.frame-375 .nav-menu .option span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    line-height: 23px;
+}
+.frame-375 .try-free .fa-arrow-right {
+    font-size: 12px;
+}
+.frame-375 .btn {
+    width: 377px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    color: #043873;
+}
+.frame-375 .login {
+    width: 126px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 16px 40px;
+    background: #FFE492;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -2%;
+}
+.frame-375 .try-free {
+    width: 227px;
+    height: 60px;
+    padding: 16px 24px;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #4F9CF9;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.hero-section {
+    position: relative;
+    width: 1920px;
+    height: 829px;
+    padding: 140px 220px;
+    top: 92px;
+    background-color: #043873;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 180px;
+    background-image: url(/image/background/Element.png);
+}
+.hero-section .page-1{
+    display: flex;
+    align-items: center;
+}
+.hero-section .image-container {
+    width: 824px;
+    height: 549px;
+    background-color: #C4DEFD;
+}
+.hero-section .text-block {
+    width: 656px;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: #FFFFFF;
+}
+.hero-section .content {
+    width: 656px;
+    height: 238px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero-section .content span {
+    width: 656;
+    height: 154;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #FFFFFF;
+}
+.hero-section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -2%;
+}
+.hero-section .try-free{
+    display: flex;
+    align-items: center;
+    width: 219px;
+    height: 63px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #4F9CF9;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -2%;
+}
+.hero-section .try-free .fa-arrow-right {
+    font-size: 12px;
+}
+.work-manager {
+    position: relative;
+    width: 1920px;
+    height: 1588px;
+    top: 92px;
+    padding: 140px 220px;
+    gap: 100px;
+    background-color: #FFFFFF;
+}
+.work-manager .background {
+    position: absolute;
+    top: 240px;
+    left: 0;
+}
+.work-manager .content-1 {
+    width: 1480px;
+    height: 547px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.work-manager .text-block {
+    z-index: 2;
+    display: flex;
+    width: 672px;
+    height: 411px;
+    gap: 60px;
+    flex-direction: column;
+}
+.work-manager .title{
+    position: relative;
+    margin-bottom: 30px;
+}
+.work-manager .effect {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -56px;
+    width: 768.74px;
+    height: 65.55px;
+    rotate: 0.14deg;
+}
+.work-manager .title h1{
+    position: relative;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    z-index: 3;
+}
+.work-manager p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -2%;
+
+}
+.work-manager .image-container {
+    width: 748px;
+    height: 547px;
+    z-index: 2;
+    background-color: #C4DEFD;
+}
+.work-manager .start {
+    width: 201px;
+    height: 63px;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    gap: 10px;
+    background-color: #4F9CF9;
+    color: #FFFFFF;
+}
+.work-manager .start .fa-solid {
+    margin-left: 10px;
+    font-size: 14px;
+}
